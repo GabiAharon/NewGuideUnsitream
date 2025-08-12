@@ -76,7 +76,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ slides, currentSlide, onNaviga
 };
 
 const SlideLayout: React.FC<{ title: string; children: React.ReactNode; navProps: SlideNavProps; }> = ({ title, children, navProps }) => (
-    <div className={`w-full h-full mx-auto bg-gradient-to-br from-indigo-700 to-indigo-900 rounded-3xl overflow-hidden relative shadow-2xl flex flex-col p-5 sm:p-10 text-white max-w-[1600px]`}>
+    <div className={`w-full h-full mx-auto bg-gradient-to-br from-indigo-700 to-indigo-900 rounded-3xl overflow-hidden relative shadow-2xl flex flex-col p-5 sm:p-10 text-white max-w-[1900px]`}>
         <ProgressBar current={navProps.currentSlide} total={navProps.totalSlides} isFirst={navProps.isFirst} />
         {!navProps.isFirst && (
             <button
