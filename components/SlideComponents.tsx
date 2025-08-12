@@ -76,7 +76,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ slides, currentSlide, onNaviga
 };
 
 const SlideLayout: React.FC<{ title: string; children: React.ReactNode; navProps: SlideNavProps; }> = ({ title, children, navProps }) => (
-    <div className={`w-full h-full mx-auto bg-gradient-to-br from-indigo-700 to-indigo-900 rounded-3xl overflow-hidden relative shadow-2xl flex flex-col p-5 sm:p-10 text-white`}>
+    <div className={`w-full h-full mx-auto bg-gradient-to-br from-indigo-700 to-indigo-900 rounded-3xl overflow-hidden relative shadow-2xl flex flex-col p-5 sm:p-10 text-white max-w-[1400px]`}>
         <ProgressBar current={navProps.currentSlide} total={navProps.totalSlides} isFirst={navProps.isFirst} />
         {!navProps.isFirst && (
             <button
@@ -270,7 +270,7 @@ const programs = [
 
 export const ProgramsSlide: React.FC<SlideNavProps> = (props) => (
     <SlideLayout title="תכניות יוניסטרים" navProps={props}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
             {programs.map(program => (
                 <div key={program.title} className="bg-white/10 backdrop-blur-md rounded-2xl p-6 flex flex-col hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
                     <div className="flex items-center mb-4">
@@ -316,14 +316,14 @@ export const ProgramsSlide: React.FC<SlideNavProps> = (props) => (
 
 // 4. Events Slide (was 5)
 const events = [
-    { icon: 'gavel', title: 'ועדות GO NO GO', subtitle: "שנה א'", details: "אירועים המתקיימים במרץ-אפריל בהם חניכי יוניסטרים מציגים את המיזמים שלהם בפני מנהלים בכירים מחברות שונות.", features: [{icon: 'event', text: 'מרץ-אפריל'}, {icon: 'record_voice_over', text: 'הצגת מיזמים'}, {icon: 'feedback', text: 'משוב מקצועי'}], img: 'https://sfile.chatglm.cn/images-ppt/19b12c1898e2.jpg' },
-    { icon: 'attach_money', title: 'פאנל השקעות', subtitle: "שנים ב'-ג'", details: "אירוע שיא לחניכי שנים ב' ו-ג' בתכנית Edventure, בו הם מציגים את המיזמים שלהם בפני משקיעים פוטנציאליים. האירוע מדמה גיוס הון אמיתי ומתקיים באנגלית.", features: [{icon: 'language', text: 'באנגלית'}, {icon: 'trending_up', text: 'סימולציית גיוס'}, {icon: 'groups', text: 'משקיעים'}], img: 'https://sfile.chatglm.cn/images-ppt/1f7d2e48f2c0.jpg' },
+    { icon: 'gavel', title: 'ועדות GO NO GO', subtitle: "שנה א'", details: "אירועים המתקיימים במרץ-אפריל בהם חניכי יוניסטרים מציגים את המיזמים שלהם בפני מנהלים בכירים מחברות שונות.", features: [{icon: 'event', text: 'מרץ-אפריל'}, {icon: 'record_voice_over', text: 'הצגת מיזמים'}, {icon: 'feedback', text: 'משוב מקצועי'}], img: 'https://i.postimg.cc/R03wmGdC/1.png' },
+    { icon: 'attach_money', title: 'פאנל השקעות', subtitle: "שנים ב'-ג'", details: "אירוע שיא לחניכי שנים ב' ו-ג' בתכנית Edventure, בו הם מציגים את המיזמים שלהם בפני משקיעים פוטנציאליים. האירוע מדמה גיוס הון אמיתי ומתקיים באנגלית.", features: [{icon: 'language', text: 'באנגלית'}, {icon: 'trending_up', text: 'סימולציית גיוס'}, {icon: 'groups', text: 'משקיעים'}], img: 'https://i.postimg.cc/zBKWbB49/2.png' },
     { icon: 'emoji_events', title: 'תחרות מיזם השנה', subtitle: "כלל השנים", details: "תחרות שנתית בה מתחרים כ-90 מיזמים של בני נוער על תואר המיזם הטוב ביותר. התחרות מחולקת לקטגוריות לפי שנת לימודים.", features: [{icon: 'military_tech', text: 'תחרות שנתית'}, {icon: 'category', text: 'קטגוריות'}, {icon: 'workspace_premium', text: 'הכרה ציבורית'}], videoUrl: 'https://www.youtube.com/embed/axG3zVVvjpM' }
 ];
 
 export const EventsSlide: React.FC<SlideNavProps> = (props) => (
     <SlideLayout title="אירועים מרכזיים" navProps={props}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
              {events.map(event => (
                 <div key={event.title} className="bg-white/10 backdrop-blur-md rounded-2xl p-6 flex flex-col hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
                     <div className="flex items-center mb-4">
@@ -369,7 +369,7 @@ const systems = [
       details: 'מערכת לתיעוד מפגשים, רישום ומעקב נוכחות חניכים. יש לעדכן בסוף כל יום או לכל המאוחר עד יום חמישי של אותו שבוע.', 
       features: [{icon: 'event_note', text: 'תיעוד מפגשים'}, {icon: 'how_to_reg', text: 'מעקב נוכחות'}, {icon: 'update', text: 'עדכון שבועי'}], 
       link: 'https://unistream.my.salesforce.com/', 
-      img: 'https://sfile.chatglm.cn/images-ppt/e99014c9dc39.png',
+      img: 'https://www.house-of-communication.com/es/en/cases/salesforce/_jcr_content/_cq_featuredimage.coreimg.png/1712749661340/20231130-imgweb-1440x700-salesforce.png',
       trainingLinks: [
         { title: 'סקירה כללית על המערכת', url: 'https://unistream1.sharepoint.com/sites/Unistream/SitePages/%D7%A1%D7%99%D7%99%D7%9C%D7%A1%D7%A4%D7%95%D7%A8%D7%A1--%D7%A1%D7%A8%D7%98%D7%95%D7%9F-%D7%94%D7%93%D7%A8%D7%9B%D7%94--%D7%A1%D7%A7%D7%99%D7%A8%D7%94-%D7%9B%D7%9C%D7%9C%D7%99%D7%AA-%D7%A9%D7%9C-%D7%9E%D7%A2%D7%A8%D7%9B%D7%AA-%D7%A1%D7%99%D7%99%D7%9C%D7%A1%D7%A4%D7%95%D7%A8%D7%A1.aspx' },
         { title: 'רישום חניכים במערכת', url: 'https://drive.google.com/file/d/1HcJa6n_QY1I7WFs0w7QoTsjwXMsLLr9L/view?pli=1' },
@@ -378,13 +378,13 @@ const systems = [
         { title: 'דיווח על חניך שנשר', url: 'https://unistream1.sharepoint.com/sites/Unistream/SitePages/%D7%A1%D7%99%D7%99%D7%9C%D7%A1%D7%A4%D7%95%D7%A8%D7%A1--%D7%93%D7%99%D7%95%D7%95%D7%9A-%D7%A2%D7%9C-%D7%97%D7%A0%D7%99%D7%9A-%D7%A9%D7%A0%D7%A9%D7%A8.aspx' }
       ]
     },
-    { icon: 'schedule', title: 'UNINET', subtitle: 'מערכת דיווחי שעות עבודה', details: 'מערכת דיווחי שעות עבודה - בה נדווח את שעות העבודה או בכל סיום יום או לכל המאוחר עד יום חמישי של אותו שבוע.', features: [{icon: 'receipt_long', text: 'חשבוניות הוצאות'}, {icon: 'directions_car', text: 'דיווח נסיעות'}, {icon: 'sick', text: 'אישורי מחלה'}, {icon: 'beach_access', text: 'אישורי חופשה'}], link: 'https://app.unistream.co.il/login', img: 'https://sfile.chatglm.cn/images-ppt/75aba609373f.png' },
-    { icon: 'folder_shared', title: 'SharePoint', subtitle: 'מערכת ניהול תוכן ומסמכים', details: 'המערכת מספקת גישה לכלל מערכי התוכן, סילבוס, תכנית לימודים, סיכומי הכשרות, לומדות ואזור אישי להעלאת תוצרים.', features: [{icon: 'menu_book', text: 'מערכי תוכן'}, {icon: 'school', text: 'סילבוס ותכנית לימודים'}, {icon: 'summarize', text: 'סיכומי הכשרות'}, {icon: 'cloud_upload', text: 'העלאת תוצרים'}], link: 'https://unistream1.sharepoint.com/', img: 'https://sfile.chatglm.cn/images-ppt/e810f22f7f31.png' }
+    { icon: 'schedule', title: 'UNINET', subtitle: 'מערכת דיווחי שעות עבודה', details: 'מערכת דיווחי שעות עבודה - בה נדווח את שעות העבודה או בכל סיום יום או לכל המאוחר עד יום חמישי של אותו שבוע.', features: [{icon: 'receipt_long', text: 'חשבוניות הוצאות'}, {icon: 'directions_car', text: 'דיווח נסיעות'}, {icon: 'sick', text: 'אישורי מחלה'}, {icon: 'beach_access', text: 'אישורי חופשה'}], link: 'https://app.unistream.co.il/login', img: 'https://i.postimg.cc/hj5wjCWC/image.png' },
+    { icon: 'folder_shared', title: 'SharePoint', subtitle: 'מערכת ניהול תוכן ומסמכים', details: 'המערכת מספקת גישה לכלל מערכי התוכן, סילבוס, תכנית לימודים, סיכומי הכשרות, לומדות ואזור אישי להעלאת תוצרים.', features: [{icon: 'menu_book', text: 'מערכי תוכן'}, {icon: 'school', text: 'סילבוס ותכנית לימודים'}, {icon: 'summarize', text: 'סיכומי הכשרות'}, {icon: 'cloud_upload', text: 'העלאת תוצרים'}], link: 'https://unistream1.sharepoint.com/', img: 'https://i.postimg.cc/jq90djRs/image.png' }
 ];
 
 export const SystemsSlide: React.FC<SlideNavProps> = (props) => (
     <SlideLayout title="מערכות יוניסטרים" navProps={props}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
             {systems.map(system => (
                 <div key={system.title} className="bg-white/10 backdrop-blur-md rounded-2xl p-6 flex flex-col hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
                     <div className="flex items-center mb-4">
@@ -595,7 +595,7 @@ const mentors = [
 
 export const MentoringSlide: React.FC<SlideNavProps> = (props) => (
     <SlideLayout title="ליווי ומנטורינג" navProps={props}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
             {mentors.map(mentor => (
                 <div key={mentor.title} className="bg-white/10 backdrop-blur-md rounded-2xl p-6 flex flex-col hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
                     <div className="flex items-center mb-4">
@@ -634,15 +634,15 @@ const trainings = [
         extraInfo: 'אנו מעודדים אתכם לקחת חלק פעיל בהעברת תכנים, להביא מעולמות התוכן שלכם ולהעשיר את שאר המנהלים. בנוסף, נשמח לשמוע מכם על תכנים שחסרים לכם ושיכולים לשפר את עבודתכם.',
         schedule: 'תדירות: חודשית | מיקום: משרדי הארגון בראש העין', 
         features: [{icon: 'settings', text: 'כלי ניהול'}, {icon: 'psychology', text: 'כישורים רכים'}, {icon: 'groups', text: 'עבודה עם נוער'}], 
-        img: 'https://sfile.chatglm.cn/images-ppt/733eb2f90b75.jpg' 
+        img: 'https://i.postimg.cc/8PjvMZ8R/Whats-App-Image-2025-08-12-at-23-40-10.jpg' 
     },
     { icon: 'update', title: 'מתחדדים', subtitle: 'הכשרה שבועית מקוונת', details: 'הכשרה שבועית המתקיימת בזום ועוסקת בשני נושאים מרכזיים: נושאים מתכנית הלימודים והכנה לאירועים קרובים. ההכשרה מספקת עדכונים שוטפים וכלים מעשיים לעבודה השוטפת.', schedule: 'תדירות: שבועית | מיקום: זום (מקוון)', features: [{icon: 'menu_book', text: 'תכנית לימודים'}, {icon: 'event_available', text: 'הכנה לאירועים'}, {icon: 'sync', text: 'עדכונים שוטפים'}], img: 'https://sfile.chatglm.cn/images-ppt/5229536c3e0c.jpg' },
-    { icon: 'school', title: 'סילבוס ותכנית לימודים', subtitle: 'מסגרת תוכנית ההכשרה', details: 'כל הכשרות נבנות בהתאם לסילבוס ולתכנית הלימודים השנתית המתואמים עם צוות ההדרכה. התכנית מבטיחה רציפות ועקביות בהכשרת כלל המנהלים והמדריכים בארגון.', schedule: 'עדכון: שנתי | מיקום: מערכת SharePoint', features: [{icon: 'auto_stories', text: 'סילבוס'}, {icon: 'calendar_today', text: 'תכנית לימודים'}, {icon: 'summarize', text: 'סיכומי הכשרות'}], img: 'https://sfile.chatglm.cn/images-ppt/fccccbc13e5a.jpg' }
+    { icon: 'school', title: 'סילבוס ותכנית לימודים', subtitle: 'מסגרת תוכנית ההכשרה', details: 'כל הכשרות נבנות בהתאם לסילבוס ולתכנית הלימודים השנתית המתואמים עם צוות ההדרכה. התכנית מבטיחה רציפות ועקביות בהכשרת כלל המנהלים והמדריכים בארגון.', schedule: 'עדכון: שנתי | מיקום: מערכת SharePoint', features: [{icon: 'auto_stories', text: 'סילבוס'}, {icon: 'calendar_today', text: 'תכנית לימודים'}, {icon: 'summarize', text: 'סיכומי הכשרות'}], img: 'https://i.postimg.cc/mDLzDwNF/image.png' }
 ];
 
 export const TrainingSlide: React.FC<SlideNavProps> = (props) => (
     <SlideLayout title="הכשרות והדרכה" navProps={props}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
             {trainings.map(training => (
                 <div key={training.title} className="bg-white/10 backdrop-blur-md rounded-2xl p-6 flex flex-col hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
                     <div className="flex items-center mb-4">
