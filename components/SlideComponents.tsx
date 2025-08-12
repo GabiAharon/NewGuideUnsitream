@@ -437,7 +437,18 @@ export const SystemsSlide: React.FC<SlideNavProps> = (props) => (
 
 // 6. Resource Hub Slide (was 7)
 export const ResourceHubSlide: React.FC<SlideNavProps> = (props) => {
-  const resources = [
+  interface ResourceItem {
+    title: string;
+    desc?: string;
+    url?: string;
+    onClick?: () => void;
+  }
+
+  const resources: Array<{
+    category: string;
+    icon: string;
+    items: ResourceItem[];
+  }> = [
     { 
       category: 'מערכות מרכזיות', 
       icon: 'dns',
