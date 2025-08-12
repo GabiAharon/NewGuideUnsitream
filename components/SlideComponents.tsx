@@ -344,7 +344,7 @@ export const EventsSlide: React.FC<SlideNavProps> = (props) => (
                             </div>
                         ))}
                     </div>
-                    {event.img && <img src={event.img} alt={event.title} className="w-full h-56 object-cover rounded-xl mt-auto pt-4" />}
+                    {event.img && <img src={event.img} alt={event.title} className="w-full h-64 object-cover rounded-xl mt-auto pt-4" />}
                     {event.videoUrl && <iframe
                         className="w-full h-48 rounded-xl mt-auto pt-4"
                         src={event.videoUrl}
@@ -428,7 +428,7 @@ export const SystemsSlide: React.FC<SlideNavProps> = (props) => (
                         כניסה למערכת
                         <Icon name="login" className="ms-3" />
                     </a>
-                    <img src={system.img} alt={system.title} className="w-full h-56 object-cover rounded-xl mt-auto pt-4" />
+                    <img src={system.img} alt={system.title} className="w-full h-64 object-cover rounded-xl mt-auto pt-4" />
                 </div>
             ))}
         </div>
@@ -589,7 +589,7 @@ export const FormsSlide: React.FC<SlideNavProps> = (props) => (
               </li>
             ))}
           </ul>
-          <img src={form.img} alt={form.title} className="w-full h-56 object-cover rounded-xl mt-auto pt-4" />
+          <img src={form.img} alt={form.title} className="w-full h-64 object-cover rounded-xl mt-auto pt-4" />
         </div>
       ))}
     </div>
@@ -627,7 +627,7 @@ export const MentoringSlide: React.FC<SlideNavProps> = (props) => (
                             </div>
                         ))}
                     </div>
-                    <img src={mentor.img} alt={mentor.title} className="w-full h-56 object-cover rounded-xl mt-auto pt-4" />
+                    <img src={mentor.img} alt={mentor.title} className="w-full h-64 object-cover rounded-xl mt-auto pt-4" />
                 </div>
             ))}
         </div>
@@ -683,7 +683,7 @@ export const TrainingSlide: React.FC<SlideNavProps> = (props) => (
                             </div>
                         ))}
                     </div>
-                    <img src={training.img} alt={training.title} className="w-full h-56 object-cover rounded-xl mt-auto pt-4" />
+                    <img src={training.img} alt={training.title} className="w-full h-64 object-cover rounded-xl mt-auto pt-4" />
                 </div>
             ))}
         </div>
