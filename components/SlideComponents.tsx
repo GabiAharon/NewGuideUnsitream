@@ -165,9 +165,13 @@ const Socials: React.FC = () => {
 // 1. Intro Slide
 export const IntroSlide: React.FC<SlideNavProps> = ({ onStart }) => (
     <div className="w-full h-full mx-auto bg-gradient-to-br from-indigo-700 to-indigo-900 rounded-3xl overflow-hidden relative shadow-2xl flex flex-col items-center justify-center p-10 text-white text-center">
-        <div className="absolute w-72 h-72 top-[-100px] right-[-100px] bg-white/10 rounded-full -z-0"></div>
-        <div className="absolute w-48 h-48 bottom-[-50px] left-[-50px] bg-white/10 rounded-full -z-0"></div>
-        <div className="relative z-10 flex flex-col items-center justify-center">
+        <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0"
+            style={{ backgroundImage: 'url(https://i.postimg.cc/4x9nf3qt/image.png)' }}
+        ></div>
+        <div className="absolute w-72 h-72 top-[-100px] right-[-100px] bg-white/10 rounded-full z-10"></div>
+        <div className="absolute w-48 h-48 bottom-[-50px] left-[-50px] bg-white/10 rounded-full z-10"></div>
+        <div className="relative z-20 flex flex-col items-center justify-center">
             <img src="https://i.postimg.cc/C5WmBYVz/1.png" alt="Unistream Logo" className="w-56 h-auto drop-shadow-lg mb-10" />
             <h1 className="text-6xl font-extrabold mb-6 leading-tight bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">מדריך למנהלים חדשים</h1>
             <h2 className="text-3xl font-semibold mb-10 opacity-90">ברוכים הבאים ליוניסטרים!</h2>
