@@ -76,7 +76,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ slides, currentSlide, onNaviga
 };
 
 const SlideLayout: React.FC<{ title: string; children: React.ReactNode; navProps: SlideNavProps; }> = ({ title, children, navProps }) => (
-    <div className={`w-full h-full mx-auto bg-gradient-to-br from-indigo-700 to-indigo-900 rounded-3xl overflow-hidden relative shadow-2xl flex flex-col p-5 sm:p-10 text-white max-w-[1400px]`}>
+    <div className={`w-full h-full mx-auto bg-gradient-to-br from-indigo-700 to-indigo-900 rounded-3xl overflow-hidden relative shadow-2xl flex flex-col p-5 sm:p-10 text-white max-w-[1600px]`}>
         <ProgressBar current={navProps.currentSlide} total={navProps.totalSlides} isFirst={navProps.isFirst} />
         {!navProps.isFirst && (
             <button
@@ -554,8 +554,8 @@ export const SalesforceGlossarySlide: React.FC<SlideNavProps> = (props) => (
 
 // 8. Forms Slide (was 9)
 const forms = [
-  { icon: 'description', title: 'אמנת חניך', subtitle: 'מסמך יסוד המכיל מידע מפורט על הפעילות ביוניסטרים', details: 'מסמך יסוד המכיל מידע מפורט על הפעילות ביוניסטרים. חשוב לקרוא ולהכיר את המסמך לעומק כדי לתת מענה לשאלות הורים. זוהי תעודת הביטוח שלנו המכסה את כל היבטים המשפטיים של הפעילות.', features: [{icon: 'gavel', text: 'היבטים משפטיים'}, {icon: 'copyright', text: 'זכויות רוחניות'}, {icon: 'photo_camera', text: 'אישורי צילום'}], list: ['עקרונות וכללי תכנית "Edventure"', 'נהלים בנוגע לזכויות רוחניות', 'הנחיות לשימוש במידע אישי של החניכים', 'אישורי צילום והשתתפות באירועים'], img: 'https://sfile.chatglm.cn/images-ppt/6237d5676ef6.jpeg' },
-  { icon: 'healing', title: 'הצהרת בריאות', subtitle: 'טופס חובה להורים על מצבו הבריאותי של החניך', details: 'טופס חובה להורים בו הם מצהירים על מצבו הבריאותי של החניך. יש לוודא עדכון שוטף של ההצהרה במקרה של שינויים במצב הבריאותי של החניכים.', features: [{icon: 'medical_services', text: 'מעקב רפואי'}, {icon: 'coronavirus', text: 'אלרגיות'}, {icon: 'emergency', text: 'מצבים מסכני חיים'}], list: ['מעקב אחר מצבים רפואיים מיוחדים', 'זיהוי אלרגיות ומצבים מסכני חיים', 'הערכות מתאימה לפעילות השוטפת במרכזים', 'הערכות לאירועים מיוחדים'], img: 'https://sfile.chatglm.cn/images-ppt/eecbc578ea86.png' }
+  { icon: 'description', title: 'אמנת חניך', subtitle: 'מסמך יסוד המכיל מידע מפורט על הפעילות ביוניסטרים', details: 'מסמך יסוד המכיל מידע מפורט על הפעילות ביוניסטרים. חשוב לקרוא ולהכיר את המסמך לעומק כדי לתת מענה לשאלות הורים. זוהי תעודת הביטוח שלנו המכסה את כל היבטים המשפטיים של הפעילות.', features: [{icon: 'gavel', text: 'היבטים משפטיים'}, {icon: 'copyright', text: 'זכויות רוחניות'}, {icon: 'photo_camera', text: 'אישורי צילום'}], list: ['עקרונות וכללי תכנית "Edventure"', 'נהלים בנוגע לזכויות רוחניות', 'הנחיות לשימוש במידע אישי של החניכים', 'אישורי צילום והשתתפות באירועים'], img: 'https://i.postimg.cc/vHZWZQHZ/GONOGO.jpg' },
+  { icon: 'healing', title: 'הצהרת בריאות', subtitle: 'טופס חובה להורים על מצבו הבריאותי של החניך', details: 'טופס חובה להורים בו הם מצהירים על מצבו הבריאותי של החניך. יש לוודא עדכון שוטף של ההצהרה במקרה של שינויים במצב הבריאותי של החניכים.', features: [{icon: 'medical_services', text: 'מעקב רפואי'}, {icon: 'coronavirus', text: 'אלרגיות'}, {icon: 'emergency', text: 'מצבים מסכני חיים'}], list: ['מעקב אחר מצבים רפואיים מיוחדים', 'זיהוי אלרגיות ומצבים מסכני חיים', 'הערכות מתאימה לפעילות השוטפת במרכזים', 'הערכות לאירועים מיוחדים'], img: 'https://i.postimg.cc/NGJKbRBQ/GONOGO2.jpg' }
 ];
 
 export const FormsSlide: React.FC<SlideNavProps> = (props) => (

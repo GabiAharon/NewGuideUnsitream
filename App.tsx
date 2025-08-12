@@ -102,7 +102,7 @@ const App: React.FC = () => {
 
   return (
       <div className="bg-gradient-to-br from-gray-50 to-gray-200 min-h-screen w-full font-sans">
-          <div className="w-full max-w-screen-2xl h-screen mx-auto flex flex-row">
+          <div className="w-full max-w-[1800px] h-screen mx-auto flex flex-row">
               {currentSlide > 0 && !showGlossary && (
                   <Sidebar 
                       slides={contentSlides.map(s => ({ title: s.title, icon: s.icon }))}
