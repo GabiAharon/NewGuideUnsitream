@@ -141,7 +141,7 @@ const Socials: React.FC = () => {
     return (
         <div className="absolute bottom-10 left-0 right-0 z-10 text-center">
             <p className="text-lg font-semibold mb-4 opacity-80">עקבו אחרינו</p>
-            <div className="flex justify-center items-center gap-8">
+            <div className="flex justify-center items-center gap-10">
                 {socialLinks.map(link => (
                     <a
                         key={link.name}
@@ -223,7 +223,7 @@ const aboutSections = [
 
 export const AboutSlide: React.FC<SlideNavProps> = (props) => (
     <SlideLayout title="אודות יוניסטרים" navProps={props}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 xl:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-10">
             {aboutSections.map(section => (
                 <div key={section.title} className="bg-white/10 backdrop-blur-md rounded-2xl p-7 hover:-translate-y-1 transition-transform duration-300">
                     <div className="flex items-center text-3xl font-bold mb-5 text-pink-400">
@@ -270,7 +270,7 @@ const programs = [
 
 export const ProgramsSlide: React.FC<SlideNavProps> = (props) => (
     <SlideLayout title="תכניות יוניסטרים" navProps={props}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
             {programs.map(program => (
                 <div key={program.title} className="bg-white/10 backdrop-blur-md rounded-2xl p-6 flex flex-col hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
                     <div className="flex items-center mb-4">
@@ -323,7 +323,7 @@ const events = [
 
 export const EventsSlide: React.FC<SlideNavProps> = (props) => (
     <SlideLayout title="אירועים מרכזיים" navProps={props}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
              {events.map(event => (
                 <div key={event.title} className="bg-white/10 backdrop-blur-md rounded-2xl p-6 flex flex-col hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
                     <div className="flex items-center mb-4">
@@ -384,7 +384,7 @@ const systems = [
 
 export const SystemsSlide: React.FC<SlideNavProps> = (props) => (
     <SlideLayout title="מערכות יוניסטרים" navProps={props}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
             {systems.map(system => (
                 <div key={system.title} className="bg-white/10 backdrop-blur-md rounded-2xl p-6 flex flex-col hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
                     <div className="flex items-center mb-4">
@@ -560,7 +560,7 @@ const forms = [
 
 export const FormsSlide: React.FC<SlideNavProps> = (props) => (
   <SlideLayout title="טפסים ומסמכים חשובים" navProps={props}>
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
       {forms.map(form => (
         <div key={form.title} className="bg-white/10 backdrop-blur-md rounded-2xl p-6 flex flex-col hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
           <div className="flex items-center mb-4">
@@ -599,14 +599,14 @@ export const FormsSlide: React.FC<SlideNavProps> = (props) => (
 
 // 9. Mentoring Slide (was 10)
 const mentors = [
-    { icon: 'person', title: 'מלווה עסקי', subtitle: 'מנטור מקצועי לאורך כל התכנית', details: 'מנטור המלווה את הקבוצה לאורך כל שלוש שנות התכנית (במידה והחיבור טוב). תפקידו לספק ליווי מקצועי מתמשך ולתמוך בהתפתחות המיזם לאורך זמן.', features: [{icon: 'timeline', text: 'ליווי ארוך טווח'}, {icon: 'support_agent', text: 'תמיכה מקצועית'}, {icon: 'trending_up', text: 'פיתוח מיזם'}], img: 'https://sfile.chatglm.cn/images-ppt/87913018d28c.jpg' },
+    { icon: 'person', title: 'מלווה עסקי', subtitle: 'מנטור מקצועי לאורך כל התכנית', details: 'מנטור המלווה את הקבוצה לאורך כל שלוש שנות התכנית (במידה והחיבור טוב). תפקידו לספק ליווי מקצועי מתמשך ולתמוך בהתפתחות המיזם לאורך זמן.', features: [{icon: 'timeline', text: 'ליווי ארוך טווח'}, {icon: 'support_agent', text: 'תמיכה מקצועית'}, {icon: 'trending_up', text: 'פיתוח מיזם'}], img: 'https://i.postimg.cc/SKvPDZTW/image.png' },
     { icon: 'groups', title: 'עמית עסקי', subtitle: 'מומחה לנושא ספציפי', details: 'מנטור המגיע למפגש חד פעמי ממוקד בנושא ספציפי אותו מנהל.ת המרכז מרגיש.ה שיש לחזק או להעשיר. מאפשר להביא מומחיות ממוקדת בתחומים שונים לפי צרכי הקבוצה.', features: [{icon: 'event_available', text: 'מפגש חד פעמי'}, {icon: 'psychology', text: 'מומחיות ממוקדת'}, {icon: 'lightbulb', text: 'העשרת ידע'}], img: 'https://sfile.chatglm.cn/images-ppt/31774f08229f.jpeg' },
     { icon: 'rocket_launch', title: 'LevelUp', subtitle: 'זרוע כלכלית עצמאית', details: 'יחידה שפונה לקהל שאינו קהל הליבה של יוניסטרים במטרה לפתח זרוע כלכלית שאינה תלויה בפילנתרופיה. כיום אנו מעבירים בארץ הרצאות וסדנאות בנושא יזמות וטכנולוגיה לילדי עובדים בחברות הייטק, עובדים בחברות לאוטק וגימלאים.', features: [{icon: 'attach_money', text: 'עצמאות כלכלית'}, {icon: 'diversity_3', text: 'קהלים מגוונים'}, {icon: 'school', text: 'הרצאות וסדנאות'}], img: 'https://sfile.chatglm.cn/images-ppt/77eb826733e4.jpg' }
 ];
 
 export const MentoringSlide: React.FC<SlideNavProps> = (props) => (
     <SlideLayout title="ליווי ומנטורינג" navProps={props}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
             {mentors.map(mentor => (
                 <div key={mentor.title} className="bg-white/10 backdrop-blur-md rounded-2xl p-6 flex flex-col hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
                     <div className="flex items-center mb-4">
@@ -653,7 +653,7 @@ const trainings = [
 
 export const TrainingSlide: React.FC<SlideNavProps> = (props) => (
     <SlideLayout title="הכשרות והדרכה" navProps={props}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
             {trainings.map(training => (
                 <div key={training.title} className="bg-white/10 backdrop-blur-md rounded-2xl p-6 flex flex-col hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
                     <div className="flex items-center mb-4">
