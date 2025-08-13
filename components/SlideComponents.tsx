@@ -139,9 +139,9 @@ const Socials: React.FC = () => {
     ];
 
     return (
-        <div className="absolute bottom-10 sm:bottom-10 left-0 right-0 z-10 text-center">
+        <div className="absolute bottom-10 left-0 right-0 z-10 text-center">
             <p className="text-lg font-semibold mb-4 opacity-80">עקבו אחרינו</p>
-            <div className="flex justify-center items-center gap-6 sm:gap-10">
+            <div className="flex justify-center items-center gap-10">
                 {socialLinks.map(link => (
                     <a
                         key={link.name}
@@ -151,9 +151,7 @@ const Socials: React.FC = () => {
                         aria-label={`Follow us on ${link.name}`}
                         className="text-white/70 hover:text-white hover:scale-110 transition-all duration-300"
                     >
-                        <div className="w-6 h-6 sm:w-7 sm:h-7">
-                            {link.icon}
-                        </div>
+                        {link.icon}
                     </a>
                 ))}
             </div>
@@ -173,16 +171,16 @@ export const IntroSlide: React.FC<SlideNavProps> = ({ onStart }) => (
         ></div>
         <div className="absolute w-72 h-72 top-[-100px] right-[-100px] bg-white/10 rounded-full z-10"></div>
         <div className="absolute w-48 h-48 bottom-[-50px] left-[-50px] bg-white/10 rounded-full z-10"></div>
-        <div className="relative z-20 flex flex-col items-center justify-center">
-            <img src="https://i.postimg.cc/C5WmBYVz/1.png" alt="Unistream Logo" className="w-56 h-auto drop-shadow-lg mb-10" />
-            <h1 className="text-6xl font-extrabold mb-6 leading-tight bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">מדריך למנהלים חדשים</h1>
-            <h2 className="text-3xl font-semibold mb-10 opacity-90">ברוכים הבאים ליוניסטרים!</h2>
-            <p className="text-2xl leading-relaxed mb-10 opacity-80 max-w-2xl">
+        <div className="relative z-20 flex flex-col items-center justify-center mt-0 sm:mt-0">
+            <img src="https://i.postimg.cc/C5WmBYVz/1.png" alt="Unistream Logo" className="w-40 sm:w-56 h-auto drop-shadow-lg mb-4 sm:mb-10" />
+            <h1 className="text-3xl sm:text-6xl font-extrabold mb-3 sm:mb-6 leading-tight bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">מדריך למנהלים חדשים</h1>
+            <h2 className="text-xl sm:text-3xl font-semibold mb-4 sm:mb-10 opacity-90">ברוכים הבאים ליוניסטרים!</h2>
+            <p className="text-lg sm:text-2xl leading-relaxed mb-6 sm:mb-10 opacity-80 max-w-2xl px-4 sm:px-0">
                 המדריך המלא שיעזור לכם להכיר את הארגון, התכניות, המערכות והתהליכים שלנו
             </p>
             <button
                 onClick={onStart}
-                className="bg-pink-500 hover:bg-pink-600 text-white border-none px-6 py-3 sm:px-8 sm:py-4 text-lg sm:text-xl font-bold rounded-full cursor-pointer transition-all duration-300 ease-in-out shadow-lg hover:shadow-2xl hover:-translate-y-1 flex items-center gap-2 mb-8 sm:mb-0"
+                className="bg-pink-500 hover:bg-pink-600 text-white border-none px-6 py-3 sm:px-8 sm:py-4 text-lg sm:text-xl font-bold rounded-full cursor-pointer transition-all duration-300 ease-in-out shadow-lg hover:shadow-2xl hover:-translate-y-1 flex items-center gap-2 mb-20 sm:mb-0"
             >
                 בואו נתחיל
                 <Icon name="arrow_forward" />
