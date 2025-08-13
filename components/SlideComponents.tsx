@@ -1001,7 +1001,8 @@ const managers = [
   { name: 'גבי אהרון', title: 'מנהל איזור דרום', email: 'southern_region@unistream.co.il' },
   { name: 'ליהי סמו', title: 'מנהלת איזור מרכז', email: 'lihi.se@unistream.co.il' },
   { name: "שקד תורג'מן", title: 'מנהלת איזור צפון', email: 'shaked.t@unistream.co.il' },
-  { name: 'נתי ברה', title: 'מנהל איזור צפון', email: 'northern_region@unistream.co.il' }
+  { name: 'נתי ברה', title: 'מנהל איזור צפון', email: 'northern_region@unistream.co.il' },
+  { name: 'סראג אלשיך', title: 'מנהלת איזור נגב וSUN נגב', email: 'negev_manager@unistream.co.il' }
 ];
 
 export const ChecklistSlide: React.FC<SlideNavProps> = (props) => {
