@@ -4,6 +4,7 @@ import { SlideNavProps } from './types';
 import { 
   IntroSlide, 
   AboutSlide, 
+  OrgStructureSlide,
   ProgramsSlide, 
   EventsSlide, 
   SystemsSlide, 
@@ -24,6 +25,7 @@ const App: React.FC = () => {
 
   const contentSlides = useMemo(() => [
     { title: 'אודות יוניסטרים', component: AboutSlide, icon: 'info' },
+    { title: 'מבנה ארגוני', component: OrgStructureSlide, icon: 'account_tree' },
     { title: 'תכניות יוניסטרים', component: ProgramsSlide, icon: 'rocket_launch' },
     { title: 'אירועים מרכזיים', component: EventsSlide, icon: 'emoji_events' },
     { title: 'מערכות יוניסטרים', component: SystemsSlide, icon: 'dns' },
@@ -58,10 +60,32 @@ const App: React.FC = () => {
     setCurrentSlide(0);
   };
 
-  const handleNavigate = (slideIndex: number) => {
+  const handleNavigate = (slideIndexOrName: number | string) => {
     if (showGlossary) setShowGlossary(false);
-    if (slideIndex >= 0 && slideIndex < slides.length) {
-      setCurrentSlide(slideIndex);
+    
+    let targetIndex: number;
+    
+    if (typeof slideIndexOrName === 'string') {
+      // Handle navigation by slide name
+      switch (slideIndexOrName) {
+        case 'about':
+          targetIndex = 1; // AboutSlide is index 1
+          break;
+        case 'org-structure':
+          targetIndex = 2; // OrgStructureSlide is index 2
+          break;
+        case 'programs':
+          targetIndex = 3; // ProgramsSlide is index 3
+          break;
+        default:
+          return; // Unknown slide name
+      }
+    } else {
+      targetIndex = slideIndexOrName;
+    }
+    
+    if (targetIndex >= 0 && targetIndex < slides.length) {
+      setCurrentSlide(targetIndex);
     }
   };
   

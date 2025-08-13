@@ -3,7 +3,7 @@ export interface SlideNavProps {
   onPrev: () => void;
   onStart: () => void;
   onHome: () => void;
-  onNavigate: (slideIndex: number) => void;
+  onNavigate: (slideIndexOrName: number | string) => void;
   onShowGlossary: () => void;
   isFirst: boolean;
   isLast: boolean;

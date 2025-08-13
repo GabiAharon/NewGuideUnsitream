@@ -249,20 +249,88 @@ export const AboutSlide: React.FC<SlideNavProps> = (props) => (
             ))}
         </div>
         <div className="text-center mt-8">
-            <a 
-                href="https://unistream.co.il/%d7%9e%d7%98%d7%94-%d7%99%d7%95%d7%a0%d7%99%d7%a1%d7%98%d7%a8%d7%99%d7%9d/"
-                target="_blank" 
-                rel="noopener noreferrer" 
+            <button 
+                onClick={() => props.onNavigate && props.onNavigate('org-structure')}
                 className="inline-flex items-center bg-pink-500 hover:bg-pink-600 text-white border-none px-8 py-4 text-xl font-bold rounded-full cursor-pointer transition-all duration-300 ease-in-out shadow-lg hover:shadow-2xl hover:-translate-y-1"
             >
-                <Icon name="groups" className="me-3" />
-                הכירו את צוות מטה יוניסטרים
-            </a>
+                <Icon name="account_tree" className="me-3" />
+                הכירו את המבנה הארגוני
+            </button>
         </div>
     </SlideLayout>
 );
 
-// 3. Programs Slide (was 4)
+// 3. Organizational Structure Slide 
+export const OrgStructureSlide: React.FC<SlideNavProps> = (props) => (
+    <div className="w-full h-full mx-auto bg-gradient-to-br from-indigo-700 to-indigo-900 overflow-hidden relative shadow-2xl flex flex-col p-5 sm:p-10 text-white">
+        <div className="absolute w-72 h-72 sm:w-96 sm:h-96 top-[-150px] left-[-150px] bg-white/5 rounded-full -z-0"></div>
+        <div className="absolute w-48 h-48 sm:w-72 sm:h-72 bottom-[-100px] right-[-100px] bg-white/5 rounded-full -z-0"></div>
+        
+        <header className="flex flex-col items-center justify-center text-center mb-4 sm:mb-8 z-10 pt-4">
+            <img src="https://i.postimg.cc/C5WmBYVz/1.png" alt="Unistream Logo" className="w-20 h-auto mb-5" />
+            <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">מבנה ארגוני</h1>
+            
+            {/* Navigation buttons */}
+            <div className="flex gap-4 mt-6">
+                <button
+                    onClick={() => props.onNavigate && props.onNavigate('about')}
+                    className="bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg transition-colors duration-200 flex items-center gap-2"
+                >
+                    <Icon name="arrow_back" />
+                    חזרה
+                </button>
+                <button
+                    onClick={() => props.onNavigate && props.onNavigate('programs')}
+                    className="bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg transition-colors duration-200 flex items-center gap-2"
+                >
+                    המשך
+                    <Icon name="arrow_forward" />
+                </button>
+            </div>
+        </header>
+
+        <main className="flex-grow overflow-hidden px-1 sm:px-4 z-10 flex flex-col items-center">
+            <div className="text-center mb-4">
+                <p className="text-lg opacity-90">
+                    כאן מוצג המבנה הארגוני העדכני ביותר. ניתן לגלול ולנווט בתוך התצוגה.
+                </p>
+                <div className="flex flex-col sm:flex-row justify-center gap-4 mt-4">
+                    <a 
+                        href="https://www.canva.com/design/DAGfQazL6vA/4V83JKmrYcdInebkLqr_8g/view" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-flex items-center justify-center bg-white/15 hover:bg-white/25 rounded-lg px-4 py-2 font-semibold text-md transition-all"
+                    >
+                        <Icon name="open_in_new" className="me-2" />
+                        פתח בחלון חדש
+                    </a>
+                    <a 
+                        href="https://unistream.co.il/%D7%9E%D7%98%D7%94-%D7%99%D7%95%D7%A0%D7%99%D7%A1%D7%98%D7%A8%D7%99%D7%9D/" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-flex items-center justify-center bg-white/15 hover:bg-white/25 rounded-lg px-4 py-2 font-semibold text-md transition-all"
+                    >
+                        <Icon name="groups" className="me-2" />
+                        הכרות עם הנפשות הפועלות
+                    </a>
+                </div>
+            </div>
+            <div className="relative flex-grow w-full rounded-2xl overflow-hidden bg-white/5 shadow-inner">
+                <iframe
+                    src="https://www.canva.com/design/DAGfQazL6vA/4V83JKmrYcdInebkLqr_8g/view?embed"
+                    className="w-full h-full border-0"
+                    title="תרשים מבנה ארגוני של יוניסטרים"
+                    allowFullScreen={true}
+                    allow="fullscreen"
+                >
+                    <p>הדפדפן שלך לא תומך ב-iframes.</p>
+                </iframe>
+            </div>
+        </main>
+    </div>
+);
+
+// 4. Programs Slide (was 3)
 const programs = [
   { icon: 'rocket_launch', title: 'Edventure', subtitle: 'תכנית הדגל של יוניסטרים', details: 'תכנית תלת שנתית (ט\'-י"א) המכשירה בני נוער מהפריפריה ליזמות עסקית, חברתית וטכנולוגית.', years: ['Junior - שנה ראשונה', 'Senior - שנה שנייה', 'Expert - שנה שלישית'], features: [{ icon: 'business', text: 'הקמת סטארט-אפ' }, { icon: 'person', text: 'ליווי מנטורים' }, { icon: 'psychology', text: 'פיתוח מיומנויות' }], videos: [{ title: 'מהי תכנית Edventure?', url: 'https://youtu.be/xkPsJyc8DD8?si=Zp_emxtV9_erilzW' }, { title: 'מבנה השנים בתכנית', url: 'https://youtu.be/GcyvkQJEiDA?si=5rYp0rjOuviGY_lE' }] },
   { icon: 'lightbulb', title: 'StartUpNow (SUN)', subtitle: 'תכנית יזמות חד שנתית', details: 'תכנית המכשירה בני נוער ליזמות עסקית וחדשנות, כוללת פיתוח מיזם, ליווי מנטורים ופיתוח מיומנויות חשיבה יצירתית.', features: [{ icon: 'trending_up', text: 'חדשנות' }, { icon: 'emoji_objects', text: 'חשיבה יצירתית' }] },
