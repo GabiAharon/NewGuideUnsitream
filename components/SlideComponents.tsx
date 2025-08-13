@@ -139,9 +139,9 @@ const Socials: React.FC = () => {
     ];
 
     return (
-        <div className="absolute bottom-10 left-0 right-0 z-10 text-center">
+        <div className="absolute bottom-10 sm:bottom-10 left-0 right-0 z-10 text-center">
             <p className="text-lg font-semibold mb-4 opacity-80">עקבו אחרינו</p>
-            <div className="flex justify-center items-center gap-10">
+            <div className="flex justify-center items-center gap-6 sm:gap-10">
                 {socialLinks.map(link => (
                     <a
                         key={link.name}
@@ -151,7 +151,9 @@ const Socials: React.FC = () => {
                         aria-label={`Follow us on ${link.name}`}
                         className="text-white/70 hover:text-white hover:scale-110 transition-all duration-300"
                     >
-                        {link.icon}
+                        <div className="w-6 h-6 sm:w-7 sm:h-7">
+                            {link.icon}
+                        </div>
                     </a>
                 ))}
             </div>
@@ -180,7 +182,7 @@ export const IntroSlide: React.FC<SlideNavProps> = ({ onStart }) => (
             </p>
             <button
                 onClick={onStart}
-                className="bg-pink-500 hover:bg-pink-600 text-white border-none px-8 py-4 text-xl font-bold rounded-full cursor-pointer transition-all duration-300 ease-in-out shadow-lg hover:shadow-2xl hover:-translate-y-1 flex items-center gap-2"
+                className="bg-pink-500 hover:bg-pink-600 text-white border-none px-6 py-3 sm:px-8 sm:py-4 text-lg sm:text-xl font-bold rounded-full cursor-pointer transition-all duration-300 ease-in-out shadow-lg hover:shadow-2xl hover:-translate-y-1 flex items-center gap-2 mb-8 sm:mb-0"
             >
                 בואו נתחיל
                 <Icon name="arrow_forward" />
@@ -373,7 +375,7 @@ const systems = [
       details: 'מערכת לתיעוד מפגשים, רישום ומעקב נוכחות חניכים. יש לעדכן בסוף כל יום או לכל המאוחר עד יום חמישי של אותו שבוע.', 
       features: [{icon: 'event_note', text: 'תיעוד מפגשים'}, {icon: 'how_to_reg', text: 'מעקב נוכחות'}, {icon: 'update', text: 'עדכון שבועי'}], 
       link: 'https://unistream.my.salesforce.com/', 
-      img: 'https://www.house-of-communication.com/es/en/cases/salesforce/_jcr_content/_cq_featuredimage.coreimg.png/1712749661340/20231130-imgweb-1440x700-salesforce.png',
+      img: 'https://i.postimg.cc/8PL55HbP/3.jpg',
       trainingLinks: [
         { title: 'סקירה כללית על המערכת', url: 'https://unistream1.sharepoint.com/sites/Unistream/SitePages/%D7%A1%D7%99%D7%99%D7%9C%D7%A1%D7%A4%D7%95%D7%A8%D7%A1--%D7%A1%D7%A8%D7%98%D7%95%D7%9F-%D7%94%D7%93%D7%A8%D7%9B%D7%94--%D7%A1%D7%A7%D7%99%D7%A8%D7%94-%D7%9B%D7%9C%D7%9C%D7%99%D7%AA-%D7%A9%D7%9C-%D7%9E%D7%A2%D7%A8%D7%9B%D7%AA-%D7%A1%D7%99%D7%99%D7%9C%D7%A1%D7%A4%D7%95%D7%A8%D7%A1.aspx' },
         { title: 'רישום חניכים במערכת', url: 'https://drive.google.com/file/d/1HcJa6n_QY1I7WFs0w7QoTsjwXMsLLr9L/view?pli=1' },
@@ -651,7 +653,7 @@ const trainings = [
         features: [{icon: 'settings', text: 'כלי ניהול'}, {icon: 'psychology', text: 'כישורים רכים'}, {icon: 'groups', text: 'עבודה עם נוער'}], 
         img: 'https://i.postimg.cc/8PjvMZ8R/Whats-App-Image-2025-08-12-at-23-40-10.jpg' 
     },
-    { icon: 'update', title: 'מתחדדים', subtitle: 'הכשרה שבועית מקוונת', details: 'הכשרה שבועית המתקיימת בזום ועוסקת בשני נושאים מרכזיים: נושאים מתכנית הלימודים והכנה לאירועים קרובים. ההכשרה מספקת עדכונים שוטפים וכלים מעשיים לעבודה השוטפת.', schedule: 'תדירות: שבועית | מיקום: זום (מקוון)', features: [{icon: 'menu_book', text: 'תכנית לימודים'}, {icon: 'event_available', text: 'הכנה לאירועים'}, {icon: 'sync', text: 'עדכונים שוטפים'}], img: 'https://sfile.chatglm.cn/images-ppt/5229536c3e0c.jpg' },
+    { icon: 'update', title: 'מתחדדים', subtitle: 'הכשרה שבועית מקוונת', details: 'הכשרה שבועית המתקיימת בזום ועוסקת בשני נושאים מרכזיים: נושאים מתכנית הלימודים והכנה לאירועים קרובים. ההכשרה מספקת עדכונים שוטפים וכלים מעשיים לעבודה השוטפת.', schedule: 'תדירות: שבועית | מיקום: זום (מקוון)', features: [{icon: 'menu_book', text: 'תכנית לימודים'}, {icon: 'event_available', text: 'הכנה לאירועים'}, {icon: 'sync', text: 'עדכונים שוטפים'}], img: 'https://i.postimg.cc/J4Cr9XWw/2.jpg' },
     { icon: 'school', title: 'סילבוס ותכנית לימודים', subtitle: 'מסגרת תוכנית ההכשרה', details: 'כל הכשרות נבנות בהתאם לסילבוס ולתכנית הלימודים השנתית המתואמים עם צוות ההדרכה. התכנית מבטיחה רציפות ועקביות בהכשרת כלל המנהלים והמדריכים בארגון.', schedule: 'עדכון: שנתי | מיקום: מערכת SharePoint', features: [{icon: 'auto_stories', text: 'סילבוס'}, {icon: 'calendar_today', text: 'תכנית לימודים'}, {icon: 'summarize', text: 'סיכומי הכשרות'}], img: 'https://i.postimg.cc/mDLzDwNF/image.png' }
 ];
 
