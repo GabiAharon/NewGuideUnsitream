@@ -438,24 +438,34 @@ const systems = [
       icon: 'cloud', 
       title: 'Salesforce', 
       subtitle: 'מערכת לתיעוד מפגשים ומעקב נוכחות', 
-      details: 'מערכת לתיעוד מפגשים, רישום ומעקב נוכחות חניכים. יש לעדכן בסוף כל יום או לכל המאוחר עד יום חמישי של אותו שבוע.', 
+      details: 'מערכת לתיעוד מפגשים, רישום ומעקב נוכחות חניכים. יש לעדכן בסוף כל יום או לכל המאוחר עד יום חמישי של אותו שבוע. נדרשים שם משתמש וסיסמה שיינתנו בשלב החפיפה.', 
       features: [{icon: 'event_note', text: 'תיעוד מפגשים'}, {icon: 'how_to_reg', text: 'מעקב נוכחות'}, {icon: 'update', text: 'עדכון שבועי'}], 
       link: 'https://unistream.my.salesforce.com/', 
       img: 'https://i.postimg.cc/8PL55HbP/3.jpg',
       trainingLinks: [
-        { title: 'סקירה כללית על המערכת', url: 'https://unistream1.sharepoint.com/sites/Unistream/SitePages/%D7%A1%D7%99%D7%99%D7%9C%D7%A1%D7%A4%D7%95%D7%A8%D7%A1--%D7%A1%D7%A8%D7%98%D7%95%D7%9F-%D7%94%D7%93%D7%A8%D7%9B%D7%94--%D7%A1%D7%A7%D7%99%D7%A8%D7%94-%D7%9B%D7%9C%D7%9C%D7%99%D7%AA-%D7%A9%D7%9C-%D7%9E%D7%A2%D7%A8%D7%9B%D7%AA-%D7%A1%D7%99%D7%99%D7%9C%D7%A1%D7%A4%D7%95%D7%A8%D7%A1.aspx' },
+        { title: 'סקירה כללית על המערכת', url: 'https://unistream.org.il/' },
         { title: 'רישום חניכים במערכת', url: 'https://drive.google.com/file/d/1HcJa6n_QY1I7WFs0w7QoTsjwXMsLLr9L/view?pli=1' },
-        { title: 'Dashboards', url: 'https://unistream1.sharepoint.com/sites/Unistream/SitePages/%D7%A1%D7%99%D7%99%D7%9C%D7%A1%D7%A4%D7%95%D7%A8%D7%A1--dashboardes.aspx' },
+        { title: 'Dashboards', url: 'https://unistream.org.il/' },
         { title: 'דיווח מפגש', url: 'https://drive.google.com/file/d/16_U3NaI7VU4T-SYu2A9vKkqr1eajyjbE/view' },
-        { title: 'דיווח על חניך שנשר', url: 'https://unistream1.sharepoint.com/sites/Unistream/SitePages/%D7%A1%D7%99%D7%99%D7%9C%D7%A1%D7%A4%D7%95%D7%A8%D7%A1--%D7%93%D7%99%D7%95%D7%95%D7%9A-%D7%A2%D7%9C-%D7%97%D7%A0%D7%99%D7%9A-%D7%A9%D7%A0%D7%A9%D7%A8.aspx' }
+        { title: 'דיווח על חניך שנשר', url: 'https://unistream.org.il/' }
       ]
     },
-    { icon: 'schedule', title: 'UNINET', subtitle: 'מערכת דיווחי שעות עבודה', details: 'מערכת דיווחי שעות עבודה - בה נדווח את שעות העבודה או בכל סיום יום או לכל המאוחר עד יום חמישי של אותו שבוע.', features: [{icon: 'receipt_long', text: 'חשבוניות הוצאות'}, {icon: 'directions_car', text: 'דיווח נסיעות'}, {icon: 'sick', text: 'אישורי מחלה'}, {icon: 'beach_access', text: 'אישורי חופשה'}], link: 'https://app.unistream.co.il/login', img: 'https://i.postimg.cc/mDQQtwnY/GONOGO5.jpg' },
-    { icon: 'folder_shared', title: 'SharePoint', subtitle: 'מערכת ניהול תוכן ומסמכים', details: 'המערכת מספקת גישה לכלל מערכי התוכן, סילבוס, תכנית לימודים, סיכומי הכשרות, לומדות ואזור אישי להעלאת תוצרים.', features: [{icon: 'menu_book', text: 'מערכי תוכן'}, {icon: 'school', text: 'סילבוס ותכנית לימודים'}, {icon: 'summarize', text: 'סיכומי הכשרות'}, {icon: 'cloud_upload', text: 'העלאת תוצרים'}], link: 'https://unistream1.sharepoint.com/', img: 'https://i.postimg.cc/Y0Hz3VFD/GONOGO3.jpg' }
+    { icon: 'schedule', title: 'UNINET', subtitle: 'מערכת דיווחי שעות עבודה', details: 'מערכת דיווחי שעות עבודה - בה נדווח את שעות העבודה או בכל סיום יום או לכל המאוחר עד יום חמישי של אותו שבוע. נדרשים שם משתמש וסיסמה שיינתנו בשלב החפיפה.', features: [{icon: 'receipt_long', text: 'חשבוניות הוצאות'}, {icon: 'directions_car', text: 'דיווח נסיעות'}, {icon: 'sick', text: 'אישורי מחלה'}, {icon: 'beach_access', text: 'אישורי חופשה'}], link: 'https://app.unistream.co.il/login', img: 'https://i.postimg.cc/mDQQtwnY/GONOGO5.jpg' },
+    { icon: 'school', title: 'Moodle', subtitle: 'מערכת הלמידה החדשה של יוניסטרים', details: 'מערכת הלמידה המתקדמת החדשה שהחליפה את SharePoint מאוגוסט 2025. המערכת מספקת גישה לכלל מערכי התוכן, סילבוס, תכנית לימודים, סיכומי הכשרות, הכשרות ואזור אישי להעלאת תוצרים. נדרשים שם משתמש וסיסמה שיינתנו בשלב החפיפה.', features: [{icon: 'menu_book', text: 'מערכי תוכן'}, {icon: 'school', text: 'הכשרות מקוונות'}, {icon: 'summarize', text: 'סיכומי הכשרות'}, {icon: 'assignment', text: 'מטלות ומבחנים'}], link: 'https://unistream.org.il/', img: 'https://i.postimg.cc/SNmz90WR/GONOGO.png' }
 ];
 
 export const SystemsSlide: React.FC<SlideNavProps> = (props) => (
     <SlideLayout title="מערכות יוניסטרים" navProps={props}>
+        <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 mb-8 text-center">
+            <div className="flex items-center justify-center mb-4">
+                <Icon name="info" className="text-4xl text-blue-400 me-3" />
+                <h3 className="text-2xl font-bold text-blue-400">הערה חשובה</h3>
+            </div>
+            <p className="text-xl leading-relaxed">
+                לכל המערכות נדרשים שם משתמש וסיסמה שיינתנו לכם בשלב החפיפה. 
+                במידה ואין לכם פרטי גישה, אנא פנו למנהל/ת האזור שלכם.
+            </p>
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
             {systems.map(system => (
                 <div key={system.title} className="bg-white/10 backdrop-blur-md rounded-2xl p-6 flex flex-col hover:bg-white/15 hover:-translate-y-1 transition-all duration-300">
@@ -525,20 +535,20 @@ export const ResourceHubSlide: React.FC<SlideNavProps> = (props) => {
       category: 'מערכות מרכזיות', 
       icon: 'dns',
       items: [
-        { title: 'Salesforce', desc: 'כניסה למערכת תיעוד ונוכחות', url: 'https://unistream.my.salesforce.com/' },
-        { title: 'UNINET', desc: 'כניסה למערכת דיווחי שעות', url: 'https://app.unistream.co.il/login' },
-        { title: 'SharePoint', desc: 'מאגר התוכן והמסמכים הארגוני', url: 'https://unistream1.sharepoint.com/' },
+        { title: 'Salesforce', desc: 'כניסה למערכת תיעוד ונוכחות (נדרש שם משתמש וסיסמה)', url: 'https://unistream.my.salesforce.com/' },
+        { title: 'UNINET', desc: 'כניסה למערכת דיווחי שעות (נדרש שם משתמש וסיסמה)', url: 'https://app.unistream.co.il/login' },
+        { title: 'Moodle', desc: 'מערכת הלמידה החדשה - כל התכנים והכשרות (נדרש שם משתמש וסיסמה)', url: 'https://unistream.org.il/' },
       ]
     },
     {
       category: 'מדריכי וידאו (Salesforce)',
       icon: 'ondemand_video',
       items: [
-        { title: 'סקירה כללית', url: 'https://unistream1.sharepoint.com/sites/Unistream/SitePages/%D7%A1%D7%99%D7%99%D7%9C%D7%A1%D7%A4%D7%95%D7%A8%D7%A1--%D7%A1%D7%A8%D7%98%D7%95%D7%9F-%D7%94%D7%93%D7%A8%D7%9B%D7%94--%D7%A1%D7%A7%D7%99%D7%A8%D7%94-%D7%9B%D7%9C%D7%9C%D7%99%D7%AA-%D7%A9%D7%9C-%D7%9E%D7%A2%D7%A8%D7%9B%D7%AA-%D7%A1%D7%99%D7%99%D7%9C%D7%A1%D7%A4%D7%95%D7%A8%D7%A1.aspx' },
+        { title: 'סקירה כללית', url: 'https://unistream.org.il/' },
         { title: 'רישום חניכים', url: 'https://drive.google.com/file/d/1HcJa6n_QY1I7WFs0w7QoTsjwXMsLLr9L/view?pli=1' },
-        { title: 'Dashboards', url: 'https://unistream1.sharepoint.com/sites/Unistream/SitePages/%D7%A1%D7%99%D7%99%D7%9C%D7%A1%D7%A4%D7%95%D7%A8%D7%A1--dashboardes.aspx' },
+        { title: 'Dashboards', url: 'https://unistream.org.il/' },
         { title: 'דיווח מפגש', url: 'https://drive.google.com/file/d/16_U3NaI7VU4T-SYu2A9vKkqr1eajyjbE/view' },
-        { title: 'דיווח נשירה', url: 'https://unistream1.sharepoint.com/sites/Unistream/SitePages/%D7%A1%D7%99%D7%99%D7%9C%D7%A1%D7%A4%D7%95%D7%A8%D7%A1--%D7%93%D7%99%D7%95%D7%95%D7%9A-%D7%A2%D7%9C-%D7%97%D7%A0%D7%99%D7%9A-%D7%A9%D7%A0%D7%A9%D7%A8.aspx' },
+        { title: 'דיווח נשירה', url: 'https://unistream.org.il/' },
         { title: 'מילון מושגים', onClick: props.onShowGlossary },
       ]
     },
@@ -554,6 +564,16 @@ export const ResourceHubSlide: React.FC<SlideNavProps> = (props) => {
 
   return (
     <SlideLayout title="ארגז כלים וקישורים מהירים" navProps={props}>
+      <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 mb-8 text-center">
+        <div className="flex items-center justify-center mb-4">
+          <Icon name="security" className="text-4xl text-orange-400 me-3" />
+          <h3 className="text-2xl font-bold text-orange-400">פרטי גישה למערכות</h3>
+        </div>
+        <p className="text-xl leading-relaxed">
+          כל המערכות דורשות שם משתמש וסיסמה. אם עדיין לא קיבלתם פרטי גישה, 
+          פנו למנהל/ת האזור שלכם לקבלת הפרטים.
+        </p>
+      </div>
       <div className="space-y-8">
         {resources.map(category => (
           <div key={category.category} className="bg-white/10 backdrop-blur-md rounded-2xl p-6">
@@ -719,8 +739,8 @@ const trainings = [
         features: [{icon: 'settings', text: 'כלי ניהול'}, {icon: 'psychology', text: 'כישורים רכים'}, {icon: 'groups', text: 'עבודה עם נוער'}], 
         img: 'https://i.postimg.cc/8PjvMZ8R/Whats-App-Image-2025-08-12-at-23-40-10.jpg' 
     },
-    { icon: 'update', title: 'מתחדדים', subtitle: 'הכשרה שבועית מקוונת', details: 'הכשרה שבועית המתקיימת בזום ועוסקת בשני נושאים מרכזיים: נושאים מתכנית הלימודים והכנה לאירועים קרובים. ההכשרה מספקת עדכונים שוטפים וכלים מעשיים לעבודה השוטפת.', schedule: 'תדירות: שבועית | מיקום: זום (מקוון)', features: [{icon: 'menu_book', text: 'תכנית לימודים'}, {icon: 'event_available', text: 'הכנה לאירועים'}, {icon: 'sync', text: 'עדכונים שוטפים'}], img: 'https://i.postimg.cc/J4Cr9XWw/2.jpg' },
-    { icon: 'school', title: 'סילבוס ותכנית לימודים', subtitle: 'מסגרת תוכנית ההכשרה', details: 'כל הכשרות נבנות בהתאם לסילבוס ולתכנית הלימודים השנתית המתואמים עם צוות ההדרכה. התכנית מבטיחה רציפות ועקביות בהכשרת כלל המנהלים והמדריכים בארגון.', schedule: 'עדכון: שנתי | מיקום: מערכת SharePoint', features: [{icon: 'auto_stories', text: 'סילבוס'}, {icon: 'calendar_today', text: 'תכנית לימודים'}, {icon: 'summarize', text: 'סיכומי הכשרות'}], img: 'https://i.postimg.cc/mDLzDwNF/image.png' }
+    { icon: 'update', title: 'מתחדדים', subtitle: 'זום פתוח עם קרן - מתווה הכשרות למנהלי המרכזים', details: 'מפגשים אונליין המתקיימים בכל יום שלישי בין 11:30–13:00. המפגשים אינם חובה - מי שמעוניין מוזמן להצטרף ולשאול שאלות הקשורות בתוכן התכנית. על המנהלים שרוצים לקחת חלק להכין שאלות מראש ולהגיע מוכנים כדי לנצל את הזמן בצורה עניינית וטובה.', schedule: 'תדירות: שבועי - יום שלישי 11:30-13:00 | מיקום: זום', features: [{icon: 'help_outline', text: 'שאלות ותשובות'}, {icon: 'psychology', text: 'הכנה מראש'}, {icon: 'schedule', text: 'לא חובה'}], img: 'https://i.postimg.cc/J4Cr9XWw/2.jpg' },
+    { icon: 'school', title: 'סילבוס ותכנית לימודים', subtitle: 'מסגרת תוכנית ההכשרה', details: 'כל הכשרות נבנות בהתאם לסילבוס ולתכנית הלימודים השנתית המתואמים עם צוות ההדרכה. התכנית מבטיחה רציפות ועקביות בהכשרת כלל המנהלים והמדריכים בארגון.', schedule: 'עדכון: שנתי | מיקום: מערכת Moodle', features: [{icon: 'auto_stories', text: 'סילבוס'}, {icon: 'calendar_today', text: 'תכנית לימודים'}, {icon: 'summarize', text: 'סיכומי הכשרות'}], img: 'https://i.postimg.cc/wBRkrK4H/image.png' }
 ];
 
 export const TrainingSlide: React.FC<SlideNavProps> = (props) => (
@@ -772,7 +792,7 @@ const faqs = [
     { q: 'איך פותחים ספק חדש?', a: 'לספקים חדשים (מעל 250 ₪) נדרשים: אישור ניהול ספרים, אישור פרטי חשבון להעברה, אישור ניכוי מס במקור. יש לוודא מול מנהל/ת התפעול לפני פתיחת ספק חדש.', list: ['בדיקה מול מנהל/ת התפעול אם קיים כבר ספק דומה', 'קבלת אישור עקרוני לפתיחת ספק חדש', 'איסוף כל המסמכים הנדרשים מהספק']},
     { q: 'מה לגבי תקציב שופרסל?', a: 'תקציב חודשי עבור קניות למרכז היזמות, המתעדכן לפי כמות החניכים.', list: ['עד 30 חניכים - 800 ₪', '30-50 חניכים - 1000 ₪', 'מעל 50 חניכים - 1200 ₪']},
     { q: 'מדפסות, דיו וציוד מחשוב', a: 'עבור מדפסות - צרכים ותקלות ניתן לפנות לשי (איש ה-IT). פנייה במייל תעשה עם העתק לליאור מנהלת התפעול ומנהל.ת האיזור. עבור דיו צריך לפנות לליאור מנהלת התפעול.', contact: [{type: 'email', value: 'it@unistream.co.il', name: 'שי (IT)'}, {type: 'phone', value: '050-5189386', name: 'שי (IT)'}, {type: 'email', value: 'operation@unistream.co.il', name: 'ליאור (תפעול)'}, {type: 'phone', value: '054-3546108', name: 'ליאור (תפעול)'}]},
-    { q: 'איפה אני מוצא סיכומי הכשרות והקלטות חשובות?', a: 'כל סיכומי ההכשרות וההקלטות החשובות נמצאים בשייר-פוינט של יוניסטרים.', link: {text: 'קישור למערכת SharePoint', url: 'https://unistream1.sharepoint.com/'} },
+    { q: 'איפה אני מוצא סיכומי הכשרות והקלטות חשובות?', a: 'כל סיכומי ההכשרות וההקלטות החשובות נמצאים במערכת הלמידה Moodle החדשה של יוניסטרים (החליפה את SharePoint מאוגוסט 2025).', link: {text: 'קישור למערכת Moodle', url: 'https://unistream.org.il/'} },
 ];
 
 export const FaqSlide: React.FC<SlideNavProps> = (props) => (
@@ -821,13 +841,13 @@ const initialQuizQuestions = [
     { question: 'מהי מטרתה של מערכת Salesforce ביוניסטרים?', options: ['דיווח שעות עבודה', 'תיעוד מפגשים ומעקב נוכחות חניכים', 'ניהול מסמכים', 'הזמנת ציוד משרדי'], answer: 'תיעוד מפגשים ומעקב נוכחות חניכים' },
     { question: 'איזה מהבאים אינו אחד מערכי הליבה של יוניסטרים?', options: ['שוויון הזדמנויות', 'חדשנות', 'רווחיות', 'אחריות חברתית'], answer: 'רווחיות' },
     { question: 'באיזו שפה מתקיים פאנל ההשקעות?', options: ['עברית', 'אנגלית', 'ערבית', 'רוסית'], answer: 'אנגלית' },
-    { question: 'באיזו מערכת משתמשים לדיווח שעות עבודה?', options: ['Salesforce', 'SharePoint', 'UNINET', 'LevelUp'], answer: 'UNINET' },
+    { question: 'באיזו מערכת משתמשים לדיווח שעות עבודה?', options: ['Salesforce', 'Moodle', 'UNINET', 'LevelUp'], answer: 'UNINET' },
     { question: 'מדוע חשוב שהורים ימלאו את טופס הצהרת הבריאות?', options: ['כדי להירשם לניוזלטר', 'כדי להצהיר על מצבו הבריאותי של החניך מטעמי בטיחות', 'כדי לקבל הנחה על התכנית', 'כדי להזמין מדים'], answer: 'כדי להצהיר על מצבו הבריאותי של החניך מטעמי בטיחות' },
     { question: 'היכן מתקיימת "הכשרת מנהלים" החודשית?', options: ['באופן מקוון בזום', 'במתנ"ס המקומי', 'במשרדי הארגון בראש העין', 'בכל חודש בחברת הייטק אחרת'], answer: 'במשרדי הארגון בראש העין' },
     { question: 'איזו תכנית היא תכנית יזמות בינלאומית הפועלת בישראל במסגרת יוניסטרים?', options: ['Edventure', 'NEXTREAM', 'NFTE', 'StartUpNow (SUN)'], answer: 'NFTE' },
     { question: 'מה תפקידו של "עמית עסקי"?', options: ['לספק ליווי ארוך טווח', 'לנהל את תקציב המרכז', 'להגיע למפגש חד-פעמי וממוקד בנושא ספציפי', 'להוביל את תכנית LevelUp'], answer: 'להגיע למפגש חד-פעמי וממוקד בנושא ספציפי' },
     { question: 'למי יש לפנות במקרה של תקלות במדפסת?', options: ['ליאור (תפעול)', 'מנהל/ת האזור', 'שי (IT)', 'המלווה העסקי'], answer: 'שי (IT)' },
-    { question: 'היכן ניתן למצוא מערכי תוכן, סילבוס וסיכומי הכשרות?', options: ['במערכת UNINET', 'במערכת Salesforce', 'במערכת SharePoint', 'באתר הציבורי'], answer: 'במערכת SharePoint' },
+    { question: 'היכן ניתן למצוא מערכי תוכן, סילבוס וסיכומי הכשרות?', options: ['במערכת UNINET', 'במערכת Salesforce', 'במערכת Moodle', 'באתר הציבורי'], answer: 'במערכת Moodle' },
     { question: 'מהי המשימה המרכזית של יוניסטרים?', options: ['לספק פעילויות אחר הצהריים לכל הנוער', 'להכשיר בני נוער ליזמות עסקית, חברתית וטכנולוגית', 'לארגן תחרויות נוער בינלאומיות', 'לממן סטארט-אפים חדשים'], answer: 'להכשיר בני נוער ליזמות עסקית, חברתית וטכנולוגית' },
     { question: 'מה המטרה העיקרית של תכנית המאיץ (אקסלרטור)?', options: ['ללמד תכנות בסיסי', 'להקפיץ מיזמים קיימים לרמה הגבוהה ביותר', 'לגייס חניכים חדשים', 'לארגן ימי כיף'], answer: 'להקפיץ מיזמים קיימים לרמה הגבוהה ביותר' },
     { question: 'באיזה פרויקט יוניסטרים משתפת פעולה עם בית הנשיא?', options: ['NEXTREAM', 'NFTE', 'מחליפים מילה', 'Edventure'], answer: 'מחליפים מילה' },
@@ -841,8 +861,14 @@ const initialQuizQuestions = [
     { question: 'מי הגוף שמאשר את הסילבוס ותכנית הלימודים השנתית?', options: ['ועד ההורים', 'החניכים עצמם', 'צוות ההדרכה של יוניסטרים', 'משרד החינוך'], answer: 'צוות ההדרכה של יוניסטרים' },
     { question: 'מהו אחד ההישגים המרכזיים של יוניסטרים?', options: ['הקמת אוניברסיטה', '22 מרכזי יזמות בפריסה ארצית', 'שליחת אסטרונאוט לחלל', 'זכייה בפרס נובל'], answer: '22 מרכזי יזמות בפריסה ארצית' },
     { question: 'מי קהל היעד העיקרי של יחידת LevelUp?', options: ['חניכי יוניסטרים בלבד', 'קהל שאינו קהל הליבה של יוניסטרים', 'פוליטיקאים', 'אסטרונאוטים'], answer: 'קהל שאינו קהל הליבה של יוניסטרים' },
-    { question: 'מהם שני הנושאים המרכזיים בהכשרת "מתחדדים" השבועית?', options: ['בישול וספורט', 'נושאים מתכנית הלימודים והכנה לאירועים', 'חדשות ופוליטיקה', 'גיוס כספים ומכירות'], answer: 'נושאים מתכנית הלימודים והכנה לאירועים' },
-    { question: 'מהו השלב האחרון בתהליך טיפול בתקלה במכשיר תמי 4?', options: ['להתעלם מהבעיה', 'לנסות לתקן לבד', 'לעדכן את מנהל התפעול בסוף הטיפול', 'לקנות מכשיר חדש'], answer: 'לעדכן את מנהל התפעול בסוף הטיפול' }
+    { question: 'מהו הפורמט החדש של הכשרת "מתחדדים"?', options: ['הרצאה חובה בזום', 'זום פתוח עם קרן - שאלות ותשובות', 'מפגש פיזי במשרד', 'קורס מקוון במודל'], answer: 'זום פתוח עם קרן - שאלות ותשובות' },
+    { question: 'מהו השלב האחרון בתהליך טיפול בתקלה במכשיר תמי 4?', options: ['להתעלם מהבעיה', 'לנסות לתקן לבד', 'לעדכן את מנהל התפעול בסוף הטיפול', 'לקנות מכשיר חדש'], answer: 'לעדכן את מנהל התפעול בסוף הטיפול' },
+    { question: 'איזו מערכת החליפה את SharePoint מחודש אוגוסט 2025?', options: ['Salesforce', 'UNINET', 'Moodle', 'LevelUp'], answer: 'Moodle' },
+    { question: 'מה הכתובת של מערכת הלמידה החדשה של יוניסטרים?', options: ['unistream.my.salesforce.com', 'unistream.org.il', 'app.unistream.co.il', 'unistream1.sharepoint.com'], answer: 'unistream.org.il' },
+    { question: 'אם אין לכם פרטי גישה למערכות יוניסטרים, למי צריך לפנות?', options: ['לחברה החיצונית', 'למנהל/ת האזור', 'ישירות למנכ"ל', 'לאף אחד - צריך לחכות'], answer: 'למנהל/ת האזור' },
+    { question: 'מתי יינתנו פרטי הגישה למערכות?', options: ['לפני ההתחלה', 'בשלב החפיפה', 'אחרי שבועיים', 'רק לפי בקשה מיוחדת'], answer: 'בשלב החפיפה' },
+    { question: 'מתי מתקיים "זום פתוח עם קרן" (מתחדדים)?', options: ['יום ראשון 10:00-11:30', 'יום שלישי 11:30-13:00', 'יום חמישי 14:00-15:30', 'יום שישי 09:00-10:30'], answer: 'יום שלישי 11:30-13:00' },
+    { question: 'מה מומלץ לעשות לפני השתתפות ב"זום פתוח עם קרן"?', options: ['לא צריך הכנה מיוחדת', 'להכין שאלות מראש', 'לקרוא את כל החומר', 'לבקש אישור מהמנהל'], answer: 'להכין שאלות מראש' }
 ];
 
 const initialQuizState = {
@@ -1009,7 +1035,7 @@ export const ChecklistSlide: React.FC<SlideNavProps> = (props) => {
   const checklistItems = useMemo(() => [
     { id: 'about', text: 'קראתי את שקף "אודות יוניסטרים" והבנתי את חזון הארגון.' },
     { id: 'programs', text: 'הכרתי את תכניות הליבה של יוניסטרים (Edventure, SUN, NFTE).' },
-    { id: 'systems_access', text: 'וידאתי שיש לי גישה פעילה למערכות: Salesforce, UNINET, SharePoint.' },
+    { id: 'systems_access', text: 'קיבלתי פרטי גישה למערכות: Salesforce, UNINET, Moodle (או פניתי למנהל/ת האזור).' },
     { id: 'systems_training', text: 'צפיתי בסרטוני ההדרכה על מערכת ה-Salesforce.' },
     { id: 'forms', text: 'הבנתי את חשיבות הטפסים "אמנת חניך" ו"הצהרת בריאות".' },
     { id: 'mentoring', text: 'הבנתי את ההבדל בין "מלווה עסקי" ל"עמית עסקי".' },
